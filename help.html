@@ -1,0 +1,45 @@
+                
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Shut The Box</title>
+    <link rel="stylesheet" type="text/css" href="stbStyles.css"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="stbScripts.js"></script>
+</head> 
+<body id="bodyalpha"> 
+
+<div id="page-header">
+    <div id="wrapper"> 
+        <header> 
+            <img align="left" src="images/header/slash2.png">
+            <img src="images/header/ShutTheBox.png" class="header">
+            <button id="redX" onclick="window.location.href='2.html'" title="Close">X</button>
+            <button id="WindowM" onclick="" title="Windowed">||</button>
+            <button id="MinM" onclick="" title="Minimize">-</button>
+            <button id="HelpQ" onclick="window.open('help.html');" title="Help">?</button>
+            
+        </header> 
+        <p id="helptext">
+Roll the dice and select a combination of values that match the total on the dice. Try to get the lowest score! To start, click on the button marked roll (shown below). <br><img src="images\button\roll.png" align="center" onclick="rollDice()" id="roll" title="Roll" width="200">
+    <br>
+Once you have clicked the roll button, the dice (below) will change to display the number rolled. Once rolled, they cannot be rolled again, until no numbers are displayed. 
+<br>
+
+        <img src="images/dice/0.png" id="die1" class="numbers" onclick="bugfind(die1)" title="Do not click.">
+        <img src="images/dice/0.png" id="die2" class="numbers" title="Click">      
+        <br>
+Once the dice have been rolled, click on the red numbers, which are shown below. Any combination of the total of the two dice can be selected. Please note, that once a tile has been selected, it CANNOT be undone!	
+<br>
+<img src="images/dice/dicexample.png" align="center" width="300">
+<br>
+When you are unable to select any more tiles, press the button marked Next (shown below). The board will reset, and it will be the next player's turn. 
+<br><img src="images\button\next.png" align="center" title="Next" width="200">
+<br>
+While playing, press the <button onclick="window.open('help.html');" title="Help">?</button> button in the upper right corner to view this page. It will not reset your game. When you are ready to start playing, press the Play button shown below! Have fun!
+<br>
+
+<button onclick="window.open('index.html');" width="200" height="100">START</button>
+</p>
+</body>
+</html>

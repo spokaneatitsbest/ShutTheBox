@@ -1,0 +1,130 @@
+                
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Shut The Box</title>
+    <link rel="stylesheet" type="text/css" href="stbStyles.css"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="stbScripts.js"></script>
+</head> 
+<body id="bodyalpha"> 
+
+<div id="page-header">
+    <div id="wrapper"> 
+        <header> 
+            <img align="left" src="images/header/slash2.png">
+            <img src="images/header/ShutTheBox.png" class="header">
+            <button id="redX" onclick="window.location.href='2.html'" title="Close">X</button>
+            <button id="WindowM" onclick="" title="Windowed">||</button>
+            <button id="MinM" onclick="" title="Minimize">-</button>
+            <button id="HelpQ" onclick="window.open('help.html');" title="Help">?</button>
+            
+        </header> 
+
+        
+        <div id="tiles"> 
+        
+            <h3>  Roll the dice and select a combination of values that match the total on the dice.</h3> 
+            <!-- dice starting -->
+<div id="Tile1">
+            <img src="images/tiles/1.png" class="numbers" id="1" onclick="selectTile(1)">
+            </div>
+            <div id="Tile2">
+            <img src="images/tiles/2.png" class="numbers" id="2" onclick="selectTile(2)">
+            </div>
+            <div id="Tile3"> 
+            <img src="images/tiles/3.png" class="numbers" id="3" onclick="selectTile(3)">
+            </div>
+            <div id="Tile4">
+            <img src="images/tiles/4.png" class="numbers" id="4" onclick="selectTile(4)">
+            </div>
+            <div id="Tile5">
+            <img src="images/tiles/5.png" class="numbers" id="5" onclick="selectTile(5)">
+            </div>
+            <div id="Tile6"> 
+            <img src="images/tiles/6.png" class="numbers" id="6" onclick="selectTile(6)">
+            </div>
+            <div id="Tile7"> 
+            <img src="images/tiles/7.png" class="numbers" id="7" onclick="selectTile(7)">
+            </div>
+            <div id="Tile8">
+            <img src="images/tiles/8.png" class="numbers" id="8" onclick="selectTile(8)">
+            </div>
+            <div id="Tile9">
+            <img src="images/tiles/9.png" class="numbers" id="9" onclick="selectTile(9)"> 
+            </div>
+            </div>
+<div id="bug">
+<!--
+  '-.    .-'
+     \__/
+ ..--/..\--..
+    | /\ |
+..--|//\\|--..
+    |\\//|
+  .--\__/--.
+ :          :
+YOU FOUND A BUG!
+    
+-->     
+            
+            
+            
+
+        </div> 
+
+        <!-- roll button -->
+    <div id="leftside">
+           
+  <!--    <button class="center bigText" id="roll" onclick="roll()" style="visibility: shown;"></button> -->
+  <img src="images/button/roll.png" class="center bigText" onclick="rollDice()" id="roll" title="Roll" />
+        
+                <!-- player's scores will be in this div -->
+
+                <div id="reset">
+                <img src="images/button/next.png" class="center bigText" title="Next Player" onclick="nextPlayer()"/>
+<!--            <button class="center bigText" onclick="nextPlayer()" style="visibility: shown">Next Player</button> -->
+
+        </div>        
+    </div>
+    <!-- dice -->
+    <div id="dice">
+        <img src="images/dice/0.png" id="die1" class="numbers" onclick="bugfind(die1)" title="Do not click.">
+        <img src="images/dice/0.png" id="die2" class="numbers" title="Click">      
+    </div>
+        <div id="scoreboard">
+            <img src="images/header/whiteScore.png" width="200px">
+            <p>Player 1's Score: <span id="score">null</span></p>
+            <p>Player 2's Score: <span id="score2">null</span></p>
+        </div>
+
+
+    </div> 
+
+
+        <button id="devtooltext" onclick="meaningoflife()">NO</button>
+        <div id="devtools" style="visibility: hidden;">
+        <button id="" onclick="resetNum()" title="Developers only. If you are not a developer, DO NOT PUSH THIS INVISIBLE BUTTON! DO NOT! (click below for more info)">resetNum()</button> 
+        <button id="" onclick="window.open('https://imgs.xkcd.com/comics/form.png');" title="Info about what happens when you click above button">Info</button>
+        <button onclick="total = total + 1">total +1</button>
+        <button onclick="total = 45">total = 45</button>
+        <button onclick="total = 0">total = 0</button>
+        <button onclick="lockOut = 1">lockOut = 1</button>
+        <button onclick="adminScore()">admin score</button>
+        </div>
+
+</div> <!-- bodyalpha -->
+
+</body> 
+</html> 
+
+
+
+
+
+
+
+
+
+
+
