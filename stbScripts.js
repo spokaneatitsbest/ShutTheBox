@@ -51,6 +51,8 @@ function nextPlayer() {
         console.log(playerNum);
         if (playerNum == 0) {
             playerNum = 1;
+            document.getElementById("player2id").style.color = "red";
+            document.getElementById("player1id").style.color = "white";
             if (total == 0) {
             P1Score=P1Score+ScoreCurrent;
         $("#score").text(P1Score);
@@ -60,13 +62,13 @@ function nextPlayer() {
         $("#score").text(P1Score);
         $("#score2").text(P2Score);
             }
-            alert("Player 1's Score was: " + P1Score + "and Player 2's Score was: " + P2Score);
             alert("It is now Player 2's Turn.");
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
             ScoreCurrent = 45;
             lockOut = 0; //lockout
             total = 0;
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
+
             if (P1Score >= 100){
                 if (P1Score < 100000) {
                     GameOverFunction(2);
@@ -77,6 +79,8 @@ function nextPlayer() {
         } 
         else {
             playerNum = 0;
+            document.getElementById("player2id").style.color = "white";
+            document.getElementById("player1id").style.color = "red";
             if (total == 0) {
             P2Score=P2Score+ScoreCurrent;
                     $("#score").text(P1Score);
@@ -86,13 +90,14 @@ function nextPlayer() {
                     $("#score").text(P1Score);
         $("#score2").text(P2Score);
             }
-            alert("Player 1's Score was: " + P1Score + "and Player 2's Score was: " + P2Score);
+
             alert("It is now Player 1's Turn.");
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
             ScoreCurrent = 45;
             lockOut = 0; //lockout
             total = 0;
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
+
             if (P2Score >= 100){
                 if (P2Score < 100000) {
                     GameOverFunction(2);
@@ -137,6 +142,7 @@ function getScore() {
     if (playerNum == 0){
         $("#score").text(ScoreCurrent);
         $("#score2").text(P2Score);
+        
     } else if (playerNum == 1) {
         $("#score2").text(P1Score);
         $("#score2").text(ScoreCurrent);
