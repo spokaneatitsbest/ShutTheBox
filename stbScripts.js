@@ -148,12 +148,12 @@ function rollDice(){
 
 function getScore() {
     if (playerNum == 0){
-        $("#score").text(ScoreCurrent);
+        $("#score").text(ScoreCurrent + P1Score);
         $("#score2").text(P2Score);
         
     } else if (playerNum == 1) {
         $("#score2").text(P1Score);
-        $("#score2").text(ScoreCurrent);
+        $("#score2").text(ScoreCurrent + P2Score);
     }
 //    $("#score").text(P1Score);
 //    $("#score2").text(P2Score);
