@@ -52,7 +52,9 @@ function nextPlayer() {
         if (playerNum == 0) {
             playerNum = 1;
             document.getElementById("player2id").style.color = "red";
+            document.getElementById("player2id").style.font-weight = "bold";
             document.getElementById("player1id").style.color = "white";
+            document.getElementById("player1id").style.font-weight = "normal";
             if (total == 0) {
             P1Score=P1Score+ScoreCurrent;
         $("#score").text(P1Score);
@@ -80,7 +82,9 @@ function nextPlayer() {
         else {
             playerNum = 0;
             document.getElementById("player2id").style.color = "white";
+            document.getElementById("player2id").style.font-weight = "normal";
             document.getElementById("player1id").style.color = "red";
+            document.getElementById("player1id").style.font-weight = "bold";
             if (total == 0) {
             P2Score=P2Score+ScoreCurrent;
                     $("#score").text(P1Score);
