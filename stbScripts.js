@@ -113,7 +113,6 @@ function nextPlayer() {
             }
 }
         resetNum();
-        resetDice();
     } //close if
 
 }
@@ -181,17 +180,15 @@ function resetNum() {
         imgNum.style.visibility="";
         imgNum = document.getElementById(9);
         imgNum.style.visibility="";
-
+        path='images/dice/0.png';
+        path2='images/dice/0.png';
+        document.images["die1"].src = path;
+        document.images["die2"].src = path2;
+        rollpath='images/button/roll.png';
+        document.images["roll"].src = rollpath;
     
 }
-funtion resetDice() {
-        path='images/dice/0.png';
-    path2='images/dice/0.png';
-    document.images["die1"].src = path;
-    document.images["die2"].src = path2;
-        rollpath='images/button/roll.png';
-    document.images["roll"].src = rollpath;
-}
+
 
 function GameOverFunction(pLost) {
     alert("Player " + pLost + " has lost!");
