@@ -8,7 +8,7 @@ var ScoreCurrent=45;
 var ScoreCurrentRevert;
 var bug=0;
 var lockOut = 0;
-
+//refresh
 //      making new arrays to hold total tile value and score of leftover tiles
 //tileTotal = new Array();
 //currentTiles = new Array(1,2,3,4,5,6,7,8,9);
