@@ -126,7 +126,7 @@ function rollDice(){
         alert("Please select more tiles before rolling");
     } else {
     rollpath2 = 'images/button/rolld.png';
-    document.images["rolld"].src = rollpath2;
+    document.images["roll"].src = rollpath2;
     rand = Math.floor((Math.random() * 6) + 1);
     rand2 = Math.floor((Math.random() * 6) + 1);
  // pathone='images/dice/rolling.gif';
