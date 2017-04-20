@@ -49,7 +49,16 @@ function selectTile(obj) {
 }
 
 function nextPlayer() {
-    if (confirm("are you sure?")){ //confirmation
+    confirmation = false;
+    console.log(confirmation);
+    if (ScoreCurrent == 0){
+        confirmation = true;
+        console.log(confirmation);
+    } else if (confirm("are you sure?")){
+        confirmation = true;
+        console.log(confirmation);
+    }
+    if (confirmation == true){ //confirmation
         console.log(playerNum);
         if (playerNum == 0) {
             playerNum = 1;
