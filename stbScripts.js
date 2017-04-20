@@ -40,7 +40,7 @@ function selectTile(obj) {
     document.images["die2"].src = path2;
     }
 
-    if(ScoreCurrent == 0){
+    if(ScoreCurrent == 0 && total == 0){
         alert("You Shut The Box!");
         nextPlayer();
     }
@@ -75,7 +75,7 @@ function nextPlayer() {
         $("#score").text(P1Score);
         $("#score2").text(P2Score);
             }
-            alert("It is now Player 2's Turn.");
+  //          alert("It is now Player 2's Turn.");
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
             ScoreCurrent = 45;
             lockOut = 0; //lockout
@@ -106,7 +106,7 @@ function nextPlayer() {
         $("#score2").text(P2Score);
             }
 
-            alert("It is now Player 1's Turn.");
+   //         alert("It is now Player 1's Turn.");
             console.log(P1Score, P2Score, ScoreCurrent, ScoreCurrentRevert);
             ScoreCurrent = 45;
             lockOut = 0; //lockout
